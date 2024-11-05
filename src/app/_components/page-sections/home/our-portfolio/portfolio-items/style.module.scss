@@ -1,0 +1,23 @@
+.list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px;
+  &-item {
+    display: block;
+    color: inherit;
+    padding: 8px 18px;
+    border: 2px solid #f0f5f9;
+    transition: all 0.2s ease-in-out;
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+    &:hover {
+      cursor: pointer;
+      border-color: #67d5b5;
+      background-color: #67d5b5;
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+}

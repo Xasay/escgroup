@@ -1,0 +1,10 @@
+.cart {
+  margin-top: 120px;
+  &-item {
+    // width: 360px;
+    max-width: fit-content;
+    height: 409px;
+    position: relative;
+    margin-bottom: 120px;
+  }
+}

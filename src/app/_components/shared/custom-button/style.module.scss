@@ -1,0 +1,35 @@
+// @import "../../styles/variables.scss";
+.mainButton {
+  //box
+  border: none;
+  outline: none;
+  appearance: none;
+  border-radius: 6px;
+  box-sizing: border-box;
+  height: 100%;
+  cursor: pointer;
+  white-space: nowrap;
+  //font
+  color: #fff;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.44rem;
+  transition: all 0.1s ease-in-out;
+
+  &.primary {
+    background-color: #67d5b5;
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  &.secondary {
+    background-color: #fff;
+    border: 2px solid #67d5b5;
+    color: #67d5b5;
+    &:hover {
+      background-color: #67d5b5;
+      color: #fff;
+    }
+  }
+}

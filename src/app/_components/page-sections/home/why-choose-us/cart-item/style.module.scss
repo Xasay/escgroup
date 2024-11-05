@@ -1,0 +1,27 @@
+.cart-item {
+  padding: 0px 15px 0px 15px;
+  height: fit-content;
+  &-icon {
+    display: flex;
+    font-size: 45px;
+    padding-right: 7px;
+    //   border-radius: 50%;
+    //   border: 2px solid #67d5b5;
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+  }
+  &-heading {
+    font-size: 16px;
+    //   margin-top: 20px;
+    margin-bottom: 15px;
+  }
+  &-description {
+    color: #777;
+    font-size: 13px;
+    line-height: 2;
+    display: inline-block;
+    max-width: 360px;
+    text-align: justify;
+  }
+}

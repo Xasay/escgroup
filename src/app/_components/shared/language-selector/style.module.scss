@@ -1,0 +1,27 @@
+// style.module.scss
+.root {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  & .MuiOutlinedInput-notchedOutline {
+    border: none !important;
+  }
+}
+
+.select {
+  border: none !important;
+  padding: 0 !important;
+  background-color: transparent !important;
+  outline: none;
+  &:hover {
+    border: none !important;
+  }
+  &:focus {
+    border: none !important;
+    outline: none !important;
+  }
+}
+
+.MuiOutlinedInput-notchedOutline {
+  border: none !important;
+}

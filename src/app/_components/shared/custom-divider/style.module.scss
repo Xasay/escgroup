@@ -1,0 +1,29 @@
+.spacer {
+  position: relative;
+  width: 50px;
+  height: 1px;
+  background-color: #67d5b5;
+  margin: 20px auto 20px;
+  z-index: -1;
+  .line {
+    position: absolute;
+    line-height: 1;
+    left: 0;
+    width: 100%;
+    top: -2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .dot {
+      display: inline-block;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background-color: #67d5b5;
+      &:not(:last-child) {
+        margin-right: 3px;
+      }
+    }
+  }
+}
