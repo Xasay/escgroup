@@ -36,32 +36,62 @@ const WhyChooseUsSection = (props: Props) => {
               className={`${classes["cards-container"]} grid lg:grid-cols-3 md:grid-cols-3 xs:grid-col-1 h-100 gap-y-10`}
             >
               <CartItem
-                icon={<TelegramIcon fontSize="inherit" color="success" />}
+                icon={
+                  <TelegramIcon
+                    style={{ color: "#751dc7" }}
+                    fontSize="inherit"
+                  />
+                }
                 heading="Modern Design"
                 description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
               />
               <CartItem
-                icon={<TelegramIcon fontSize="inherit" color="success" />}
+                icon={
+                  <TelegramIcon
+                    style={{ color: "#751dc7" }}
+                    fontSize="inherit"
+                  />
+                }
                 heading="Modern Design"
                 description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
               />
               <CartItem
-                icon={<TelegramIcon fontSize="inherit" color="success" />}
+                icon={
+                  <TelegramIcon
+                    style={{ color: "#751dc7" }}
+                    fontSize="inherit"
+                  />
+                }
                 heading="Modern Design"
                 description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
               />
               <CartItem
-                icon={<TelegramIcon fontSize="inherit" color="success" />}
+                icon={
+                  <TelegramIcon
+                    style={{ color: "#751dc7" }}
+                    fontSize="inherit"
+                  />
+                }
                 heading="Modern Design"
                 description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
               />
               <CartItem
-                icon={<TelegramIcon fontSize="inherit" color="success" />}
+                icon={
+                  <TelegramIcon
+                    style={{ color: "#751dc7" }}
+                    fontSize="inherit"
+                  />
+                }
                 heading="Modern Design"
                 description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
               />
               <CartItem
-                icon={<TelegramIcon fontSize="inherit" color="success" />}
+                icon={
+                  <TelegramIcon
+                    style={{ color: "#751dc7" }}
+                    fontSize="inherit"
+                  />
+                }
                 heading="Modern Design"
                 description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
               />

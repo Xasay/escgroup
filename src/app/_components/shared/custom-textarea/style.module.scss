@@ -1,4 +1,4 @@
-@import "/src/app/_scss/mixsins.scss";
+@import "/src/app/_scss/mixsins.scss", "/src/app/_scss/variable.scss";
 .textarea-container {
   width: 100%;
   display: flex;
@@ -18,7 +18,7 @@
   .textarea {
     appearance: none;
     outline: none;
-    background-color: #f6ffff;
+    background-color: $secondaryColor;
     border: 1px solid rgb(230, 230, 230);
     border-radius: 6px;
     padding: 12px;

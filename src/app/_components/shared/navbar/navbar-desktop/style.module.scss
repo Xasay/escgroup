@@ -2,7 +2,9 @@
 .desktop-navbar {
   display: flex;
   .menu-list {
-    width: 50%;
+    li{
+      padding: 0px 16px;
+    }
   }
   @include media(small) {
     display: none;

@@ -1,8 +1,10 @@
+@import "/src/app/_scss/variable.scss";
+
 .spacer {
   position: relative;
   width: 50px;
   height: 1px;
-  background-color: #67d5b5;
+  background-color: $primaryColor;
   margin: 20px auto 20px;
   z-index: -1;
   .line {
@@ -20,7 +22,7 @@
       width: 5px;
       height: 5px;
       border-radius: 50%;
-      background-color: #67d5b5;
+      background-color: $primaryColor;
       &:not(:last-child) {
         margin-right: 3px;
       }

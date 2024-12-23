@@ -1,10 +1,12 @@
+@import "/src/app/_scss/variable.scss";
+
 .cart-item {
   padding: 65px 15px 15px 15px;
   &-icon {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    border: 2px solid #67d5b5;
+    border: 2px solid $primaryColor;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -9,12 +9,10 @@ type Props = {};
 const Navbar = (props: Props) => {
   return (
     <nav>
-      <CustomContaiiner>
-        <div className={classes["navbar"]}>
-          <NavbarDesktop />
-          <NavbarMobil />
-        </div>
-      </CustomContaiiner>
+      <div className={classes["navbar"]}>
+        <NavbarDesktop />
+        <NavbarMobil />
+      </div>
     </nav>
   );
 };

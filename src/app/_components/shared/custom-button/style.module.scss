@@ -1,4 +1,4 @@
-// @import "../../styles/variables.scss";
+@import "/src/app/_scss/mixsins.scss", "/src/app/_scss/variable.scss";
 .mainButton {
   //box
   border: none;
@@ -10,7 +10,7 @@
   cursor: pointer;
   white-space: nowrap;
   //font
-  color: #fff;
+  color: #FFF;
   font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
@@ -18,7 +18,7 @@
   transition: all 0.1s ease-in-out;
 
   &.primary {
-    background-color: #67d5b5;
+    background-color: $primaryColor;
     &:hover {
       opacity: 0.9;
     }
@@ -28,7 +28,7 @@
     border: 2px solid #67d5b5;
     color: #67d5b5;
     &:hover {
-      background-color: #67d5b5;
+      background-color: $primaryColor;
       color: #fff;
     }
   }

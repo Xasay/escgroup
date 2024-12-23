@@ -7,7 +7,7 @@ import classes from "./style.module.scss";
 interface ISelect {
   value: number;
   items: any[];
-  handleChange: (e:any) => void;
+  handleChange: (e: any) => void;
 }
 
 const DropDown = ({ value, handleChange, items }: ISelect) => {
@@ -30,6 +30,7 @@ const DropDown = ({ value, handleChange, items }: ISelect) => {
         onChange={handleChange}
         className={classes.select}
         MenuProps={menuProps}
+        IconComponent={() => null}
         classes={{
           root: classes.root, // Apply the root style
           select: classes.select, // Apply the select style

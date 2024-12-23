@@ -1,0 +1,26 @@
+@import "/src/app/_scss/mixsins.scss";
+
+.customContainer {
+  // width: min(90%, 1440px);
+  width: 100%;
+  max-width: 1440px;
+  margin-inline: auto;
+  padding: 0 6.75rem;
+}
+
+@include media(lg) {
+  .customContainer {
+    padding: 0 4.75rem;
+  }
+}
+
+@include media(md) {
+  .customContainer {
+    padding: 0 2.75rem;
+  }
+}
+@include media(sm) {
+  .customContainer {
+    padding: 0 2.5rem;
+  }
+}

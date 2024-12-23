@@ -46,19 +46,29 @@ const WeAreAwesomeAgency = ({}: Props) => {
             style={{ height: "400px" }}
           >
             <CartItem
-              icon={<AutoFixHighIcon color="success" fontSize={"large"} />}
+              icon={
+                <AutoFixHighIcon
+                  style={{ color: "#751dc7" }}
+                  fontSize={"large"}
+                />
+              }
               heading="Branding"
               description="Maecenas mattis est eget efficitur tempus. Maecenas fermentum fringilla vestibulum. Nulla pulvinar ullamcorper auctor"
             />
             <CartItem
               icon={
-                <LocalFireDepartmentIcon color="success" fontSize={"large"} />
+                <LocalFireDepartmentIcon
+                  style={{ color: "#751dc7" }}
+                  fontSize={"large"}
+                />
               }
               description="Maecenas mattis est eget efficitur tempus. Maecenas fermentum fringilla vestibulum. Nulla pulvinar ullamcorper auctor"
               heading="Development"
             />
             <CartItem
-              icon={<ScienceIcon color="success" fontSize={"large"} />}
+              icon={
+                <ScienceIcon style={{ color: "#751dc7" }} fontSize={"large"} />
+              }
               description="Maecenas mattis est eget efficitur tempus. Maecenas fermentum fringilla vestibulum. Nulla pulvinar ullamcorper auctor"
               heading="Marketing"
             />
