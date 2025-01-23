@@ -1,4 +1,10 @@
+import createNextIntlPlugin from 'next-intl/plugin';
+ 
+const withNextIntl = createNextIntlPlugin();
 /** @type {import('next').NextConfig} */
+
+
+
 const nextConfig = {
   webpack(config) {
     const fileLoaderRule = config.module.rules.find((rule) =>
@@ -23,10 +29,8 @@ const nextConfig = {
 
     return config;
   },
- /*  i18n: {
-    locales: ["en-US", "fr", "nl-NL"],
-    defaultLocale: "en-US",
-  }, */
 };
 
-export default nextConfig;
+// export default nextConfig;// open comment to use i18n
+
+export default withNextIntl(nextConfig); // latest version of next-intl

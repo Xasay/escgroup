@@ -5,12 +5,13 @@ import FormControl from "@mui/material/FormControl";
 import classes from "./style.module.scss";
 
 interface ISelect {
-  value: number;
-  items: any[];
+  value: number | string;
+  defaultValue?: number | string;
+  items: Array<{ inner: React.ReactNode; value: number | string }>;
   handleChange: (e: any) => void;
 }
 
-const DropDown = ({ value, handleChange, items }: ISelect) => {
+const DropDown = ({ value, defaultValue, handleChange, items }: ISelect) => {
   const menuProps: any = {
     anchorOrigin: {
       vertical: "bottom",
@@ -27,6 +28,7 @@ const DropDown = ({ value, handleChange, items }: ISelect) => {
     <FormControl className={classes.root}>
       <Select
         value={value}
+        defaultValue={defaultValue}
         onChange={handleChange}
         className={classes.select}
         MenuProps={menuProps}
@@ -47,13 +49,9 @@ const DropDown = ({ value, handleChange, items }: ISelect) => {
           },
         }}
       >
-        {items.map((item: any) => (
-          <MenuItem
-            key={item.key}
-            value={item.value}
-            className={classes.menuItem}
-          >
-            {item.key}
+        {items.map((item, index: any) => (
+          <MenuItem key={index} value={item.value} className={classes.menuItem}>
+            {item.inner}
           </MenuItem>
         ))}
       </Select>
