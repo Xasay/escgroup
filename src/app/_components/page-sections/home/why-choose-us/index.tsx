@@ -8,10 +8,13 @@ import { CustomParagraph } from "@/app/_components/shared/custom-paragraph";
 import TelegramIcon from "@mui/icons-material/Telegram";
 import CartItem from "./cart-item";
 import ContentContainer from "@/app/_components/containers/content-container";
+import { useTranslations } from "next-intl";
 
 type Props = {};
 
 const WhyChooseUsSection = (props: Props) => {
+  const t = useTranslations("HomePage");
+
   return (
     <section>
       <CustomContaiiner padding="0 0 120px 0">
@@ -21,7 +24,10 @@ const WhyChooseUsSection = (props: Props) => {
             justifyContent="center"
             flexDirection="column"
           >
-            <CustomHeading className={"main-heading"} content="Why Choose US" />
+            <CustomHeading
+              className={"main-heading"}
+              content={t("whyChooseUs")}
+            />
             <CustomDivider />
             <CustomParagraph
               content="The difference between a Designer and Developer when it comes to design skills, is the difference between shooting a bullet and throwing it"

@@ -10,10 +10,11 @@ import React from "react";
 import CartItem from "./cart-item";
 import CustomDivider from "@/app/_components/shared/custom-divider";
 import ContentContainer from "@/app/_components/containers/content-container";
+import { useTranslations } from "next-intl";
 
-type Props = {};
+const WeAreAwesomeAgency = () => {
+  const t = useTranslations("HomePage");
 
-const WeAreAwesomeAgency = ({}: Props) => {
   return (
     <section className="we-are-awesome-agency w-100">
       <CustomContaiiner padding="120px 0 120px 0">
@@ -26,14 +27,14 @@ const WeAreAwesomeAgency = ({}: Props) => {
             <CustomHeading
               className={"main-heading"}
               type="h2"
-              content="We Are Awesome Web Agency"
+              content={t("webAgencytitle")}
             />
             <CustomDivider />
             <CustomParagraph
               fontSize="1rem"
               color="#141414"
               textAlign="center"
-              content="The difference between a Designer and Developer when it comes to design skills, is the difference between shooting a bullet and throwing it"
+              content={t("webAgencyDescription")}
               style={{
                 display: "inline-block",
                 maxWidth: "813px",
@@ -52,7 +53,7 @@ const WeAreAwesomeAgency = ({}: Props) => {
                   fontSize={"large"}
                 />
               }
-              heading="Branding"
+              heading={t("branding")}
               description="Maecenas mattis est eget efficitur tempus. Maecenas fermentum fringilla vestibulum. Nulla pulvinar ullamcorper auctor"
             />
             <CartItem
@@ -63,14 +64,14 @@ const WeAreAwesomeAgency = ({}: Props) => {
                 />
               }
               description="Maecenas mattis est eget efficitur tempus. Maecenas fermentum fringilla vestibulum. Nulla pulvinar ullamcorper auctor"
-              heading="Development"
+              heading={t("development")}
             />
             <CartItem
               icon={
                 <ScienceIcon style={{ color: "#751dc7" }} fontSize={"large"} />
               }
               description="Maecenas mattis est eget efficitur tempus. Maecenas fermentum fringilla vestibulum. Nulla pulvinar ullamcorper auctor"
-              heading="Marketing"
+              heading={t("marketing")}
             />
           </div>
         </ContentContainer>

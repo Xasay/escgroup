@@ -1,21 +1,20 @@
-"use client";
 import Link from "next/link";
 import React from "react";
 import classes from "./style.module.scss";
-import DropDown from "../../language-selector";
-import Azeflag from "../../../../../../public/assets/azeflag.svg";
-import Rusflag from "../../../../../../public/assets/russiaflag.svg";
-import Usaflag from "../../../../../../public/assets/usaflag.svg";
 import ContentContainer from "@/app/_components/containers/content-container";
+import LanguageSelector from "./LanguageSelector";
+import { cookies } from "next/headers";
+import { defaultLocale, Locale } from "@/i18n/config";
 
 type Props = {};
 
 const NavbarDesktop = ({}: Props) => {
-  const [val, setVal] = React.useState(7);
 
-  const handleChange = (event: any) => {
-    setVal(event.target.value);
-  };
+  const COOKIE_NAME = "NEXT_LOCALE";
+
+
+  const defaultLocaleNavbar = cookies().get(COOKIE_NAME)?.value || defaultLocale as Locale
+
   return (
     <ContentContainer>
       <div
@@ -41,15 +40,7 @@ const NavbarDesktop = ({}: Props) => {
               <Link href="/portfolio">Portfolio</Link>
             </li>
           </ul>
-          <DropDown
-            value={val}
-            handleChange={handleChange}
-            items={[
-              { key: <Azeflag />, value: 7 },
-              { key: <Rusflag />, value: 28 },
-              { key: <Usaflag />, value: 29 },
-            ]}
-          />
+          <LanguageSelector defaultLocale={defaultLocaleNavbar} />
         </div>
       </div>
     </ContentContainer>
