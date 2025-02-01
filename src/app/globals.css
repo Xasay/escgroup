@@ -57,3 +57,10 @@ body,
 html {
   width: 100%;
 }
+
+@media (max-width: 642px) {
+  .main-heading {
+    font-size: 2rem;
+    margin: 0 0 8px 0;
+  }
+}

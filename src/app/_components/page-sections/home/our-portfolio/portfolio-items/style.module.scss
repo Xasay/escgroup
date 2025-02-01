@@ -1,8 +1,13 @@
+@import "../../../../../_scss/mixsins.scss";
+
 .list {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 120px;
+  @include media(medium) {
+    margin-bottom: 48px;
+  }
   &-item {
     display: block;
     color: inherit;

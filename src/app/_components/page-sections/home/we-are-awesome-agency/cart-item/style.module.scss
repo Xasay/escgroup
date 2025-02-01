@@ -1,10 +1,17 @@
-@import "/src/app/_scss/variable.scss";
+@import "/src/app/_scss/variable.scss", "/src/app/_scss/mixsins.scss";
 
 .cart-item {
   padding: 65px 15px 15px 15px;
+  @include media(medium) {
+    padding: 15px;
+  }
   &-icon {
     width: 100px;
     height: 100px;
+    @include media(medium) {
+      width: 70px;
+      height: 70px;
+    }
     border-radius: 50%;
     border: 2px solid $primaryColor;
     display: flex;
@@ -14,10 +21,17 @@
   &-heading {
     margin-top: 20px;
     margin-bottom: 10px;
+    font-size: 1.25rem;
+    @include media(medium) {
+      font-size: 2rem;
+    }
   }
   &-description {
     color: #777;
     font-size: 13px;
+    @include media(medium) {
+      font-size: 10px;
+    }
     line-height: 2;
     display: inline-block;
     max-width: 360px;

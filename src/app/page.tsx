@@ -13,7 +13,7 @@ export default async function Home({}: IProps) {
       <WeAreAwesomeAgency />
       <WhyChooseUsSection />
       <OurPortfolio />
-      <OurTeam />
+      {/* <OurTeam /> */}
       <Contactus />
     </React.Fragment>
   );

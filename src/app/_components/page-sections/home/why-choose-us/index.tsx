@@ -17,7 +17,7 @@ const WhyChooseUsSection = (props: Props) => {
 
   return (
     <section>
-      <CustomContaiiner padding="0 0 120px 0">
+      <CustomContaiiner className={classes["main-container"]}>
         <ContentContainer>
           <Row
             alignItems="center"
@@ -30,6 +30,8 @@ const WhyChooseUsSection = (props: Props) => {
             />
             <CustomDivider />
             <CustomParagraph
+              fontSize="1.25rem"
+              color="#141414"
               content="The difference between a Designer and Developer when it comes to design skills, is the difference between shooting a bullet and throwing it"
               textAlign="center"
               style={{
@@ -38,71 +40,53 @@ const WhyChooseUsSection = (props: Props) => {
                 lineHeight: "2",
               }}
             />
-            <div
-              className={`${classes["cards-container"]} grid lg:grid-cols-3 md:grid-cols-3 xs:grid-col-1 h-100 gap-y-10`}
-            >
-              <CartItem
-                icon={
-                  <TelegramIcon
-                    style={{ color: "#751dc7" }}
-                    fontSize="inherit"
-                  />
-                }
-                heading="Modern Design"
-                description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
-              />
-              <CartItem
-                icon={
-                  <TelegramIcon
-                    style={{ color: "#751dc7" }}
-                    fontSize="inherit"
-                  />
-                }
-                heading="Modern Design"
-                description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
-              />
-              <CartItem
-                icon={
-                  <TelegramIcon
-                    style={{ color: "#751dc7" }}
-                    fontSize="inherit"
-                  />
-                }
-                heading="Modern Design"
-                description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
-              />
-              <CartItem
-                icon={
-                  <TelegramIcon
-                    style={{ color: "#751dc7" }}
-                    fontSize="inherit"
-                  />
-                }
-                heading="Modern Design"
-                description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
-              />
-              <CartItem
-                icon={
-                  <TelegramIcon
-                    style={{ color: "#751dc7" }}
-                    fontSize="inherit"
-                  />
-                }
-                heading="Modern Design"
-                description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
-              />
-              <CartItem
-                icon={
-                  <TelegramIcon
-                    style={{ color: "#751dc7" }}
-                    fontSize="inherit"
-                  />
-                }
-                heading="Modern Design"
-                description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
-              />
-            </div>
           </Row>
+          <div
+            className={`${classes["cards-container"]} grid lg:grid-cols-3 md:grid-cols-3 xs:grid-col-1 h-100 gap-y-10`}
+          >
+            <CartItem
+              icon={
+                <TelegramIcon style={{ color: "#6c63ff" }} fontSize="inherit" />
+              }
+              heading="Modern Design"
+              description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
+            />
+            <CartItem
+              icon={
+                <TelegramIcon style={{ color: "#6c63ff" }} fontSize="inherit" />
+              }
+              heading="Modern Design"
+              description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
+            />
+            <CartItem
+              icon={
+                <TelegramIcon style={{ color: "#6c63ff" }} fontSize="inherit" />
+              }
+              heading="Modern Design"
+              description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
+            />
+            <CartItem
+              icon={
+                <TelegramIcon style={{ color: "#6c63ff" }} fontSize="inherit" />
+              }
+              heading="Modern Design"
+              description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
+            />
+            <CartItem
+              icon={
+                <TelegramIcon style={{ color: "#6c63ff" }} fontSize="inherit" />
+              }
+              heading="Modern Design"
+              description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
+            />
+            <CartItem
+              icon={
+                <TelegramIcon style={{ color: "#6c63ff" }} fontSize="inherit" />
+              }
+              heading="Modern Design"
+              description="Donec et egestas quam. Phasellus mattis dui et elementum consectetur. Etiam eu magna id lectus"
+            />
+          </div>
         </ContentContainer>
       </CustomContaiiner>
     </section>

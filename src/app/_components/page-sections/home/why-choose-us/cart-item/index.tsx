@@ -26,14 +26,15 @@ const theme = createTheme({
 const CartItem = ({ icon, heading, description }: Props) => {
   return (
     <ThemeProvider theme={theme}>
-      <div className={`${classes["cart-item"]}  flex`}>
+      <div
+        className={`${classes["cart-item"]}  flex flex-col  items-center sm:flex-row sm:items-start`}
+      >
         <div className={classes["cart-item-icon"]}>{icon}</div>
-        <div className={`flex   flex-col`}>
+        <div className={`flex   flex-col items-center sm:items-start`}>
           <CustomHeading
             className={classes["cart-item-heading"]}
             type="h3"
             content={heading}
-            fontSize="1.25rem"
             fontWeight="600"
           />
           <CustomParagraph

@@ -22,7 +22,6 @@ const OurPortfolio = (props: Props) => {
             <CustomHeading
               className={"main-heading"}
               content="Our Portfolio"
-              type="h2"
             />
             <CustomDivider />
             <PortfolioItems />
