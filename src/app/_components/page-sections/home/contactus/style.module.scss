@@ -1,8 +1,10 @@
-.heading {
-}
+@import '../../../../_scss/mixsins.scss';
 
 .form-button {
   padding: 16px 24px;
   width: 100%;
   font-size: 1rem;
+  @include media(medium) {
+   font-size: 1.75rem;
+  }
 }

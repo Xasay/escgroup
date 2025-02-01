@@ -29,7 +29,7 @@ const Contactus = (props: Props) => {
           >
             <CustomHeading content="contact us" className={"main-heading"} />
             <CustomDivider />
-            <form className="w-3/6">
+            <form className="w-[95%] sm:w-3/6  ">
               <div className={classes?.["form-block"]}>
                 <div className="mb-2">
                   <CustomInput

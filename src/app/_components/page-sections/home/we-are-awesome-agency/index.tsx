@@ -17,7 +17,7 @@ const WeAreAwesomeAgency = () => {
 
   return (
     <section className="we-are-awesome-agency w-100">
-      <CustomContaiiner padding="120px 0 120px 0">
+      <CustomContaiiner className={classes["main-container"]}>
         <ContentContainer>
           <Row
             justifyContent="center"
@@ -31,7 +31,7 @@ const WeAreAwesomeAgency = () => {
             />
             <CustomDivider />
             <CustomParagraph
-              fontSize="1rem"
+              fontSize="1.25rem"
               color="#141414"
               textAlign="center"
               content={t("webAgencyDescription")}
@@ -44,12 +44,12 @@ const WeAreAwesomeAgency = () => {
           </Row>
           <div
             className={`${classes["cards-container"]} grid lg:grid-cols-3 md:grid-cols-3 xs:grid-col-1 h-100`}
-            style={{ height: "400px" }}
+            style={{ minHeight: "400px" }}
           >
             <CartItem
               icon={
                 <AutoFixHighIcon
-                  style={{ color: "#751dc7" }}
+                  style={{ color: "#6c63ff" }}
                   fontSize={"large"}
                 />
               }
@@ -59,7 +59,7 @@ const WeAreAwesomeAgency = () => {
             <CartItem
               icon={
                 <LocalFireDepartmentIcon
-                  style={{ color: "#751dc7" }}
+                  style={{ color: "#6c63ff" }}
                   fontSize={"large"}
                 />
               }
@@ -68,7 +68,7 @@ const WeAreAwesomeAgency = () => {
             />
             <CartItem
               icon={
-                <ScienceIcon style={{ color: "#751dc7" }} fontSize={"large"} />
+                <ScienceIcon style={{ color: "#6c63ff" }} fontSize={"large"} />
               }
               description="Maecenas mattis est eget efficitur tempus. Maecenas fermentum fringilla vestibulum. Nulla pulvinar ullamcorper auctor"
               heading={t("marketing")}

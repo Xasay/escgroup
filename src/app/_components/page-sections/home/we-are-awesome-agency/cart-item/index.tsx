@@ -32,7 +32,6 @@ const CartItem = ({ icon, heading, description }: Props) => {
           className={classes["cart-item-heading"]}
           type="h3"
           content={heading}
-          fontSize="1.25rem"
           fontWeight="600"
         />
         <CustomDivider/>

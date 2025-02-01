@@ -1,4 +1,4 @@
-@import "/src/app/_scss/variable.scss";
+@import "/src/app/_scss/variable.scss", "/src/app/_scss/mixsins.scss";
 
 .spacer {
   position: relative;
@@ -7,6 +7,9 @@
   background-color: $primaryColor;
   margin: 20px auto 20px;
   z-index: -1;
+  @include media(medium) {
+    margin: 10px auto 10px;
+  }
   .line {
     position: absolute;
     line-height: 1;

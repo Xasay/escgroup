@@ -5,9 +5,19 @@ interface IContainer extends React.HTMLAttributes<HTMLDivElement> {
   padding?: string;
 }
 
-const CustomContainer = ({ children, style, padding }: IContainer) => {
+const CustomContainer = ({
+  children,
+  style,
+  padding,
+  className,
+  ...props
+}: IContainer) => {
   return (
-    <div className="center" style={{ padding, ...style }}>
+    <div
+      {...props}
+      className={`center ${className}`}
+      style={{ padding, ...style }}
+    >
       {children}
     </div>
   );
