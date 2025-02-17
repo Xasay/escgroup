@@ -5,6 +5,8 @@ import Link from "next/link";
 type Props = {};
 
 const NavbarMobil = ({}: Props) => {
+
+  //input ustune klik edende checked true olarsa menu acilir, eks halda baglanir , bunu da show classi ile yoxlayiriq
   return (
     <div className={`${classes.container} ${classes["nav-mobil-container"]}`}>
       <input className={classes.checkbox} type="checkbox" name="" id="" />
@@ -13,7 +15,7 @@ const NavbarMobil = ({}: Props) => {
         <span className={`${classes.line} ${classes.line2}`}></span>
         <span className={`${classes.line} ${classes.line3}`}></span>
       </div>
-      <div className={classes["menu-items"]}>
+      <div className={`${classes["menu-items"]} ${classes.show} `}>
         <li>
           <Link href="/">Home</Link>
         </li>
@@ -27,7 +29,7 @@ const NavbarMobil = ({}: Props) => {
           <Link href="#">Portfolio</Link>
         </li>
         <li>
-          <Link href="/contact">Contact</Link>
+          <Link href="/contactus">Contact us</Link>
         </li>
       </div>
     </div>
