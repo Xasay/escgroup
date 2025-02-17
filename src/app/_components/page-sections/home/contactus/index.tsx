@@ -19,10 +19,10 @@ const Contactus = (props: Props) => {
 
   return (
     <section>
-      <CustomContainer>
+      <CustomContainer className={classes["main-container"]}>
         <ContentContainer>
           <Row
-            className="w-full"
+            className={`w-full`}
             justifyContent="center"
             alignItems="center"
             flexDirection="column"

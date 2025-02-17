@@ -14,8 +14,8 @@ const PageInner = (props: Props) => {
     const { name, value } = e.target;
   };
   return (
-    <div className="grid grid-cols-2 mt-20">
-      <div>
+    <div className="grid grid-cols-1  mt-20 lg:grid-cols-2">
+      <div  className="hidden  lg:block" >
         <svg
           id="e0b35d3b-637f-4cd2-a9fd-b6e76c92ec56"
           data-name="Layer 1"
@@ -278,7 +278,7 @@ const PageInner = (props: Props) => {
           />
         </svg>
       </div>
-      <div>
+      <div className="w-[95%] mx-auto lg:w-full" >
         <Row
           className="w-full"
           justifyContent="center"
