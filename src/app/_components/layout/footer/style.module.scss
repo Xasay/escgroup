@@ -1,0 +1,71 @@
+.footer {
+  margin-top: 80px;
+  .logo-container {
+    display: flex;
+    flex-direction: column; // Stack children vertically
+    align-items: stretch; // Ensure children stretch to fill the container width
+    max-width: 372px;
+    .logo {
+      display: inline-block;
+    }
+    .logo-desc {
+      display: inline-block;
+      font-size: 16px;
+      color: #515151;
+      white-space: normal; /* Ensures text wraps */
+      word-wrap: break-word;
+      margin-top: 27px;
+    }
+  }
+  .menu {
+    h4 {
+      font-size: 17px;
+      font-weight: 500;
+    }
+    a {
+      display: inline-block;
+      margin-top: 5px;
+      color: #515151;
+      font-size: 16px;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+  .phone {
+    a {
+      display: inline-block;
+      margin-top: 27px;
+      color: #515151;
+    }
+  }
+  .social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1px solid #d2d2d2;
+      align-self: flex-end;
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.copyright {
+  padding: 30px;
+  margin-top: 53px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #515151;
+  border-top: 1px solid #d2d2d2;
+}

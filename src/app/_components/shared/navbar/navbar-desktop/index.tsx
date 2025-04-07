@@ -36,9 +36,9 @@ const NavbarDesktop = ({}: Props) => {
             <li>
               <Link href="/services">Services</Link>
             </li>
-            <li>
+           {/*  <li>
               <Link href="/portfolio">Portfolio</Link>
-            </li>
+            </li> */}
           </ul>
           <LanguageSelector defaultLocale={defaultLocaleNavbar} />
         </div>
