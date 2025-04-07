@@ -6,8 +6,12 @@ interface IContainer extends React.HTMLAttributes<HTMLDivElement> {
   padding?: string;
 }
 
-const ContentContainer = ({children}: IContainer) => {
-  return <div className={classes["content-container"]}>{children}</div>;
+const ContentContainer = ({ children, className }: IContainer) => {
+  return (
+    <div className={`${classes["content-container"]} ${className}`}>
+      {children}
+    </div>
+  );
 };
 
 export default ContentContainer;

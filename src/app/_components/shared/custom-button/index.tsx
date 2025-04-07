@@ -1,3 +1,4 @@
+import { CSSProperties } from "react";
 import styles from "./style.module.scss";
 
 interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -5,13 +6,13 @@ interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   margin?: string;
   padding?: string;
   text: string;
-  bgColor: string;
+  bgColor?: string;
   className?: string;
   size?: string;
   maxWidth?: string;
   fontSize?: string;
   maxHeight?: string;
-  style?: any;
+  style?: CSSProperties;
 }
 
 export const CustomButton = ({
@@ -21,7 +22,7 @@ export const CustomButton = ({
   margin,
   padding,
   size,
-  bgColor,
+  bgColor = "primary",
   maxWidth,
   maxHeight,
   style,

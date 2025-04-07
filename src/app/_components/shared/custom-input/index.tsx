@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import styles from "./style.module.scss";
 
 interface IProps {
@@ -9,6 +9,7 @@ interface IProps {
   autoComplete?: string;
   name?: string;
   customref?: any;
+  style?: CSSProperties;
   onChange?: (e: any) => void;
 }
 const CustomInput = ({
@@ -19,11 +20,12 @@ const CustomInput = ({
   autoComplete,
   name = "",
   customref,
+  style,
   onChange,
 }: IProps) => {
   return (
     <div className={styles?.["input-container"]}>
-      <label className={styles?.["input-label"]}>{label}</label>
+      {label && <label className={styles?.["input-label"]}>{label}</label>}
       <input
         type={type}
         placeholder={placeholder}
@@ -33,6 +35,7 @@ const CustomInput = ({
         name={name}
         ref={customref}
         onChange={onChange}
+        style={style}
       />
     </div>
   );

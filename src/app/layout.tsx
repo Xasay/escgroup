@@ -6,6 +6,7 @@ import { Suspense } from "react";
 import Loading from "./_components/shared/loading";
 import { NextIntlClientProvider } from "next-intl";
 import { getLocale, getMessages } from "next-intl/server";
+import Footer from "./_components/layout/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -47,6 +48,7 @@ export default async function RootLayout({
             </NextIntlClientProvider>
           </main>
         </Suspense>
+        <Footer />
       </body>
     </html>
   );

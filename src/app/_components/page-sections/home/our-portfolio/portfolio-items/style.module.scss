@@ -1,4 +1,5 @@
-@import "../../../../../_scss/mixsins.scss";
+@import "../../../../../_scss/mixsins.scss",
+  "../../../../../_scss/variable.scss";
 
 .list {
   display: flex;
@@ -19,8 +20,8 @@
     }
     &:hover {
       cursor: pointer;
-      border-color: #67d5b5;
-      background-color: #67d5b5;
+      border-color: $primaryColor;
+      background-color: $primaryColor;
       text-decoration: none;
       color: #fff;
     }
