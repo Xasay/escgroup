@@ -1,13 +1,12 @@
 import React from "react";
 import classes from "./style.module.scss";
 import ContentContainer from "@/app/_components/containers/content-container";
-import { CustomHeading } from "@/app/_components/shared/custom-heading";
 import { CustomParagraph } from "@/app/_components/shared/custom-paragraph";
 import MegaPhone from "../../../../../../public/assets/images/megaphone.svg";
 import WebApps from "../../../../../../public/assets/images/webApps.svg";
 import SeoIcon from "../../../../../../public/assets/images/seoIcon.svg";
 import MobileAppsIcon from "../../../../../../public/assets/images/mobileApps.svg";
-import ArVrSolutionsIcon from "../../../../../../public/assets/images/arVrSolutions.svg";
+import ArVrSolutionsIcon from "../../../../../../public/assets/images/arvrsolutions.svg";
 
 const HeroSection = () => {
   return (
