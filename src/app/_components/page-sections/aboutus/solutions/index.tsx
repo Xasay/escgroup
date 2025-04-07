@@ -6,7 +6,7 @@ import ContentContainer from "@/app/_components/containers/content-container";
 import WebApps from "../../../../../../public/assets/images/webApps.svg";
 import SeoIcon from "../../../../../../public/assets/images/seoIcon.svg";
 import MobileAppsIcon from "../../../../../../public/assets/images/mobileApps.svg";
-import ArVrSolutionsIcon from "../../../../../../public/assets/images/arVrSolutions.svg";
+import ArVrSolutionsIcon from "../../../../../../public/assets/images/arvrsolutions.svg";
 
 const Solutions = () => {
   return (
