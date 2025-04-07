@@ -7,7 +7,7 @@ import MegaPhone from "../../../../../../public/assets/images/megaphone.svg";
 import WebApps from "../../../../../../public/assets/images/webApps.svg";
 import SeoIcon from "../../../../../../public/assets/images/seoIcon.svg";
 import MobileAppsIcon from "../../../../../../public/assets/images/mobileApps.svg";
-import ArVrSolutionsIcon from "../../../../../../public/assets/images/arVrSolutions.svg";
+import ArVrSolutionsIcon from "../../../../../../public/assets/images/arvrsolutions.svg";
 
 const HeroSection = () => {
   return (
